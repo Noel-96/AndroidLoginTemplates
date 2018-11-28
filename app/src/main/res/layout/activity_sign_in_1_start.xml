@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.constraint.motion.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="7">
 
@@ -29,7 +36,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/roundedbutton2"
-            android:text="SIGN UP"
+            android:text="@string/sign_up"
             android:textColor="#ffff"
             android:textSize="15sp" />
 
@@ -41,7 +48,7 @@
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@drawable/roundedbutton"
-            android:text="SIGN IN"
+            android:text="@string/sign_in"
             android:textColor="#ffff"
             android:textSize="15sp" />
     </LinearLayout>
@@ -52,7 +59,7 @@
         android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:gravity="top|center"
-        android:text="FORGOT ?"
+        android:text="@string/forgot"
         android:textAllCaps="false"
         android:textColor="#9C9C9C"
         android:textSize="15sp"
@@ -64,7 +71,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="bottom|center"
-        android:text="SIGN IN WITH"
+        android:text="@string/sign_in_with"
         android:textColor="#D4D4D4"
         android:textSize="12sp" />
 
@@ -81,14 +88,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="30dp"
-            android:src="@drawable/ic_instagram" />
+            android:src="@drawable/ic_instagram"
+            android:layout_marginEnd="30dp" />
 
         <ImageView
             android:id="@+id/twitter_icon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="30dp"
-            android:src="@drawable/ic_twitter" />
+            android:src="@drawable/ic_twitter"
+            android:layout_marginEnd="30dp" />
 
         <ImageView
             android:id="@+id/pininterest_icon"
@@ -101,6 +110,5 @@
     </LinearLayout>
 
 
-
-
 </LinearLayout>
+</android.support.constraint.motion.MotionLayout>

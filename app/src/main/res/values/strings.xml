@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android Login Templates</string>
+    <string name="sign_in_with">SIGN IN WITH</string>
+    <string name="forgot">FORGOT ?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="next_design_click_here">NEXT DESIGN ... CLICK HERE</string>
 </resources>
