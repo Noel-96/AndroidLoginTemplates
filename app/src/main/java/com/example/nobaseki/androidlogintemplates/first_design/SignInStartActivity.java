@@ -21,6 +21,8 @@ public class SignInStartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in_1_start);
 
+        getSupportActionBar().hide();
+
         btn_signIn = findViewById(R.id.button_sign_in);
 
         btn_signIn.setOnClickListener(new View.OnClickListener() {

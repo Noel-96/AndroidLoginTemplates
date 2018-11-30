@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- TODO put a back button and remove the text on the action bar -->
-<android.support.constraint.motion.MotionLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#6c63ff"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="#6c63ff"
         android:weightSum="6">
 
         <ImageView
@@ -95,4 +89,3 @@
 
     </LinearLayout>
 
-</android.support.constraint.motion.MotionLayout>
