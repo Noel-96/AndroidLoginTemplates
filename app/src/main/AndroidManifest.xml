@@ -18,11 +18,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".first_design.SignInTransistionActivity"
+        <activity android:name=".first_design.SignInEndActivity"
                   android:theme="@style/AppTheme.Transparent">
-        </activity>
-
-        <activity android:name=".first_design.SignInEndActivity">
         </activity>
 
     </application>

@@ -1,91 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO put a back button and remove the text on the action bar -->
-
-    <LinearLayout
+    <android.support.constraint.motion.MotionLayout
+        android:id="@+id/root_layout"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#6c63ff"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#6c63ff"
-        android:weightSum="6">
+        >
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="3"
-            android:src="@drawable/ic_welcome_icon" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="top|center"
-            android:text="Welcome!"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
-
-        <EditText
-            android:id="@+id/reg_name_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:background="#FFb4b0ff"
-            android:drawableLeft="@drawable/ic_user"
-            android:drawablePadding="20dp"
-            android:text="Enter your User Name"
-            android:inputType="text"
-            android:textSize="15sp"
-            android:maxLength="30"
-            android:maxLines="1"
-            android:paddingLeft="10dp"
-            android:textColor="#ffff"
-            />
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_welcome_icon"
+            app:layout_constraintBottom_toTopOf="@+id/reg_name_et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-        <EditText
-            android:id="@+id/reg_password_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="0.5"
-            android:background="#FFb4b0ff"
-            android:drawableLeft="@drawable/ic_locked"
-            android:drawablePadding="20dp"
-            android:text="Enter your Password"
-            android:inputType="text"
-            android:textSize="15sp"
-            android:maxLength="30"
-            android:maxLines="1"
-            android:paddingLeft="10dp"
-            android:textColor="#ffff" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="60dp"
-            android:layout_weight="0.2"
-            android:background="@drawable/roundedbutton3"
-            android:text="@string/sign_in"
-            android:textColor="#88455e"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="bottom"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:gravity="top|center"
-            android:text="@string/next_design_click_here"
-            android:textColor="#ffff"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+    <EditText
+        android:id="@+id/reg_name_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFb4b0ff"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="20dp"
+        android:elevation="3dp"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text="Enter your User Name"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_password_et"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
 
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/reg_password_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5"
+        android:background="#FFb4b0ff"
+        android:drawableLeft="@drawable/ic_locked"
+        android:drawablePadding="20dp"
+        android:elevation="3dp"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:text="Enter your Password"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name_et" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedbutton3"
+        android:text="@string/sign_in"
+        android:textColor="#88455e"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/nxt_design"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_password_et" />
+
+    <TextView
+        android:id="@+id/nxt_design"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:text="@string/next_design_click_here"
+        android:textColor="#ffff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+    </android.support.constraint.motion.MotionLayout>
+
+
+
+
+
 

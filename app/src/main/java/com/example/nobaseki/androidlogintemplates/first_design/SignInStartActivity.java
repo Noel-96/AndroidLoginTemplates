@@ -41,9 +41,9 @@ public class SignInStartActivity extends AppCompatActivity {
         int revealX = (int) (view.getX() + view.getWidth() / 2);
         int revealY = (int) (view.getY() + view.getHeight() / 2);
 
-        Intent intent = new Intent(this, SignInTransistionActivity.class);
-        intent.putExtra(SignInTransistionActivity.EXTRA_CIRCULAR_REVEAL_X, revealX);
-        intent.putExtra(SignInTransistionActivity.EXTRA_CIRCULAR_REVEAL_Y, revealY);
+        Intent intent = new Intent(this, SignInEndActivity.class);
+        intent.putExtra(SignInEndActivity.EXTRA_CIRCULAR_REVEAL_X, revealX);
+        intent.putExtra(SignInEndActivity.EXTRA_CIRCULAR_REVEAL_Y, revealY);
 
         ActivityCompat.startActivity(this, intent, options.toBundle());
     }
